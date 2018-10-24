@@ -7,10 +7,10 @@ export function DoctorsFetch() {
   const token = localStorage.getItem("token");
   //console.log(token);
   const request = axios.get(URL, {
-    // headers: { Authorization: `Bearer ${token}` }
+    headers: { Authorization: `Bearer ${token}` }
   });
+  //.then(response => console.log(response));
 
-  console.log(request);
   return {
     type: FETCH_DOCTORS,
     payload: request

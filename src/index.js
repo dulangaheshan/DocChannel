@@ -10,6 +10,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import AdminRegister from "./components/Auth/AdminRegister";
 import AdminLogin from "./components/Auth/AdminLogin";
+import AdminPannel from "./components/MainFlow/AdminPannel";
 import DoctorList from "./components/MainFlow/DoctorList";
 
 import reducers from "./reducers";
@@ -21,7 +22,7 @@ ReactDOM.render(
     <BrowserRouter>
       <div>
         <Switch>
-          <Route path="/doctorslist" component={DoctorList} />
+          <Route path="/adminpannel" component={AdminPannel} />
           <Route path="/register" component={AdminRegister} />
           <Route path="/" component={AdminLogin} />
         </Switch>

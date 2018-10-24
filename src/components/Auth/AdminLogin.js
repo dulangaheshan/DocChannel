@@ -40,7 +40,7 @@ class AdminLogin extends Component {
   onSubmit(values) {
     //console.log(values);
     this.props.LoginAction(values, () => {
-      this.props.history.push("/doctorslist");
+      this.props.history.push("/adminpannel");
     });
     //this.props.createPost(values);
     //this.props.history.push("/");
